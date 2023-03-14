@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Picolé</title>
+    <style>
+        .botoes
+        {
+            width: 100%;
+            display: flex;
+            justify-content: right;
+        }
+        button
+        {
+            color:red;
+            background-color: rgb(248, 181, 164);
+        }
+
+        button:hover
+        {
+            background-color: rgb(177, 115, 151);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <fieldset> 
+        <legend> Dados do Picolezinho</legend>
+        Descrição:
+        <input type="text" class="caixa_larga" id="descriçao">
+        Digite o preço:
+        <input type="text" class="caixa_larga" id="preco">
+        Fornecedor da parada:
+        <input type="text" class="caixa_larga" id="fornecedor">
+        Quantidade a desenrolar:
+        <input type="text" class="caixa_larga" id="quantidade">
+        <br> <br> 
+        Data do pedido:
+        <input type="date" id="data_pedido">
+    </fieldset>
+    
+    <br> <br>
+
+    <fieldset>
+        <legend> Sobre o sabor</legend>
+        Escolha somente 1 sabor:
+        <input type="radio" id="Kapo morango" name="sabores">
+        Kapo morango
+        <input type="radio" id="Kapo uva" name="sabores">
+        Kapo uva
+        <input type="radio" id="Kapo abacaxi" name="sabores">
+        Kapo abacaxi
+        <input type="radio" id="Caldo Knor" name="sabores">
+        Caldo Knor
+        <br> <br>
+        Selecione quais as cores da embalagem:
+        <br>
+        <input type="checkbox" id="amarelo"> Amarelo
+        <input type="checkbox" id="verde"> Verde
+        <input type="checkbox" id="vermelho"> Vermelho
+        <br> <br>
+        Selecione um Estado para entrega:
+        <select id="estado">
+            <option>Amapá</option>
+            <option>Bahia</option>
+            <option>Paraná</option>
+            <option selected> Santa Catarina</option>
+        </select>
+    </fieldset>
+    <div class="botoes">
+        <button>ENVIAR</button>
+        <button>LIMPAR</button>
+    </div>
+
+</body>
+</html>
